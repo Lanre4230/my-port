@@ -1,0 +1,28 @@
+.footer-div {
+  margin-top: 2rem;
+  margin-bottom: -3rem;
+  background-color: #011b2c;
+  width: 100%;
+}
+
+.footer-text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  color: #868e96;
+  font-size: 16px;
+  padding: 1rem;
+  // background-color: #011b2c;
+  font-family: "Google Sans Regular";
+}
+
+@media (max-width: 768px) {
+  .footer-text {
+    font-weight: normal;
+    font-size: 14px;
+  }
+  .footer-div {
+    margin-top: 1rem;
+  }
+}

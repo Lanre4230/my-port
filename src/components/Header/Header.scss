@@ -1,0 +1,146 @@
+.header {
+  display: block;
+  max-width: 90%;
+  padding: 5px;
+  margin: 0px auto;
+  //   border: solid red 2px;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+
+  :hover {
+    background: lightblue;
+  }
+}
+// .grey-color {
+//   color: #868e96;
+// }
+
+.header li a {
+  display: block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 1.5rem;
+  text-decoration: none;
+  //   margin-top: 10px;
+  line-height: normal;
+  // border: solid lightblue 2px;
+  border-radius: 3px;
+  padding: 3px 1px;
+}
+.header .logo-name {
+  font-family: "arial";
+  font-weight: lighter;
+  padding: 0 10px;
+  color: #fff;
+}
+.menu {
+  font-family: "Google Sans Regular";
+  //   border: solid green 2px;
+}
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+/* menu icon */
+.header .menu-icon {
+  cursor: pointer;
+  //   display: inline-block;
+  float: right;
+  padding: 24px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+  //   border: solid red 2px;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 370px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+  }
+  .header .menu {
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+@media (max-width: 960px) and (min-width: 768px) {
+  .header {
+    font-size: 12px;
+  }
+}

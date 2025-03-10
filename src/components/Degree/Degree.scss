@@ -1,0 +1,131 @@
+.degree-card {
+  width: 100%;
+  padding: 0rem 2rem;
+}
+.card-body {
+  display: flex;
+  gap: 14px;
+  margin: 10px 0px;
+  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+  background: #8f9199f6;
+}
+.card-title {
+  font-family: "Google Sans Regular";
+  font-size: 20px;
+  margin: 5px 0;
+}
+.card-subtitle {
+  font-family: "Google Sans Regular";
+  font-size: 14px;
+  margin: 0;
+}
+
+.body-header {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  padding: 40px 0;
+  justify-content: center;
+  align-items: center;
+  background: #011747d9;
+  color: #ecf9fe;
+}
+.body-header > p {
+  text-align: center;
+  font-size: 14px;
+  font-family: "Google Sans Regular";
+}
+.body-header-title {
+  align-items: flex-start;
+  padding-top: 20px;
+  width: 80%;
+  color: black;
+}
+
+.body-header-duration {
+  width: 20%;
+}
+.duration {
+  font-family: "Google Sans Regular";
+  font-size: 16px;
+  padding-right: 10px;
+  float: right;
+  font-weight: normal;
+}
+
+.body-content {
+  max-width: inherit;
+  border-radius: 0px 0px 7px 7px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-list {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: "Google Sans Regular";
+}
+.visit-btn {
+  display: inline-block;
+  margin: 0px 10px 10px 0px;
+  padding: 10px;
+  border-radius: 7px;
+  border: 0px;
+}
+
+.btn {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Google Sans Regular";
+}
+
+@media (max-width: 1380px) {
+}
+
+@media (max-width: 768px) {
+  .degree-card {
+    flex-direction: column;
+  }
+
+  .body-header {
+    flex-direction: column;
+  }
+
+  .body-header-title {
+    width: 100%;
+  }
+
+  .body-header-duration {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .duration {
+    padding: 0px;
+    margin: 0px;
+    float: left;
+    font-weight: none;
+  }
+
+  .body-header {
+    width: 100% !important;
+  }
+  .body-header-title {
+    padding: 10px;
+  }
+  .card-body {
+    width: 100% !important;
+    flex-direction: column;
+  }
+
+  .card-title {
+    font-size: 16px;
+  }
+  .card-subtitle {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}

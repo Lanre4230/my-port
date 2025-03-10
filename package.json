@@ -1,0 +1,28 @@
+{
+  "name": "react-essentials-start",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "baseui": "^15.0.0",
+    "framer-motion": "^11.18.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-icons": "^4.12.0",
+    "react-router-hash-link": "^2.4.3",
+    "styled-components": "^6.1.14",
+    "styletron-engine-atomic": "^1.6.2",
+    "styletron-react": "^6.1.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.0.0",
+    "sass": "^1.69.5",
+    "tailwindcss": "^3.3.5",
+    "vite": "^4.3.9"
+  },
+  "keywords": [],
+  "description": ""
+}

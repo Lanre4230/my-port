@@ -1,0 +1,112 @@
+.about {
+  display: flex;
+  width: 90%;
+  padding: 5px;
+  margin: 0rem auto;
+}
+
+.about-div {
+  width: 100%;
+  padding: 20px 10px;
+  margin: 0px auto;
+  display: block;
+}
+
+.about h1 {
+  font-size: 2rem;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #fff;
+}
+
+.about h2 {
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #fff;
+}
+
+.about p {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+  color: #fff;
+  font-family: "Roboto Condensed", sans-serif;
+  line-height: 1.8rem;
+}
+
+.about-button {
+  display: flex;
+  margin-top: 2rem;
+  padding: 0.5rem 0.5rem;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  background: rgb(33, 34, 31);
+  cursor: pointer;
+  border: none;
+
+  &:hover {
+    background-color: hsl(71, 72%, 45%); // Darker shade for hover effect
+    transform: scale(1.05); // Slightly enlarges button on hover
+  }
+
+  &:active {
+    background-color: #263442; // Even darker shade for active state
+    transform: scale(0.95); // Shrinks slightly on click
+  }
+}
+
+.about-button a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.image-div {
+  text-align: center;
+  margin-top: 3rem;
+}
+.image-div > img {
+  max-width: 80%;
+  border: 6px solid #001c55;
+  animation: changeBorderRadius 10s ease-in-out infinite;
+}
+
+@keyframes changeBorderRadius {
+  0% {
+    border-radius: 100% 90% 100% 100%;
+  }
+  25% {
+    border-radius: 100% 8%5 100% 90%;
+  }
+  50% {
+    border-radius: 90% 100% 85% 90%;
+    border-color: #a5e0fa;
+  }
+  100% {
+    border-radius: 100% 85% 90% 90%;
+  }
+}
+
+/* Media Query */
+
+// @media (max-width: 1380px) {
+//   .about {
+//     display: block;
+//   }
+
+//   .about-div {
+//     width: 100%;
+//   }
+
+//   .image-div {
+//     text-align: center;
+//     margin-bottom: 3rem;
+//     margin-top: 0rem;
+//   }
+// }
+
+@media (max-width: 768px) {
+  .about {
+    display: block;
+  }
+}
